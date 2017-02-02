@@ -1,0 +1,9 @@
+*.java
+*.class
+*.dylib
+*.so
+*.o
+*.jar
+*.xml
+
+java_lib/
