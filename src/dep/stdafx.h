@@ -83,15 +83,15 @@ Software Foundation,  Inc., 59 Temple Place, Suite 330, Boston, MA
 #include "dep/CommonDefinitions.h"
 
 #ifdef __GNUC__
-#include <ext/hash_map>
-#include <ext/hash_set>
-#include "dep/linux/hash_set_ext.h"
+// #include <ext/hash_map>
+// #include <ext/hash_set>
+// #include "dep/linux/hash_set_ext.h"
 #ifndef stdext
 #define stdext __gnu_cxx
 #endif
 #else
 #include <hash_map>
-#include <hash_set>
+// #include <hash_set>
 #endif
 
 #include <set>
@@ -172,17 +172,17 @@ typedef char TCHAR, _TCHAR, *PTCHAR;
 #include <tchar.h>
 #endif
 
-#ifndef SEM_SEMUN_DEFINED
-#ifndef __FreeBSD__
-#define SEM_SEMUN_DEFINED
-union semun
-{
-	int val;
-	struct semid_ds *buf;
-	unsigned short *array;
-};
-#endif
-#endif
+// #ifndef SEM_SEMUN_DEFINED
+// #ifndef __FreeBSD__
+// #define SEM_SEMUN_DEFINED
+// union semun
+// {
+// 	int val;
+// 	struct semid_ds *buf;
+// 	unsigned short *array;
+// };
+// #endif
+// #endif
 
 
 // WINPORT
@@ -202,7 +202,7 @@ union semun
 	#pragma GCC diagnostic ignored "-Wreorder"
 #endif
 
-#include "dep/mysql_gate.h"
+// #include "dep/mysql_gate.h"
 
 #ifdef __GNUC__
 	#pragma GCC diagnostic error "-Wreorder"

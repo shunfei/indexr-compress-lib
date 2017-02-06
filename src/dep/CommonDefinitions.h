@@ -21,12 +21,14 @@ Software Foundation,  Inc., 59 Temple Place, Suite 330, Boston, MA
 #include <cfloat>
 #include <string>
 #include <vector>
+#include <stdlib.h>
+
 // #include <boost/logic/tribool.hpp>
 
 //#pragma comment(linker, "/DEFAULTLIB:rcbaselib.lib")
 // #include "fwd.h"
 #include "compress/defs.h"
-// #include "dep/ProcessType.h"
+#include "dep/stdafx.h"
 // #include "fwd.h"
 //#include "bin64.h"
 
@@ -388,10 +390,10 @@ typedef union double_int_t {
 
 typedef int DataPackId;
 
-template<typename base_t, typename T>
-std::auto_ptr<base_t> Clone( T const& orig ) {
-	return std::auto_ptr<base_t>(new T((T&)*orig));
-}
+// template<typename base_t, typename T>
+// std::auto_ptr<base_t> Clone( T const& orig ) {
+// 	return std::auto_ptr<base_t>(new T((T&)*orig));
+// }
 
 namespace bh
 {
